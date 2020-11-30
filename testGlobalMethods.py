@@ -129,7 +129,6 @@ def testWanIP(connection, dssh, address, noOfRegisters, numberOfIterations, numb
             rutWanIP = dssh_stdout.read().decode().strip()
 
             if rutWanIP == modbusWanIP:
-                error.sendError("Read WAN IP", modbusWanIP, rutWanIP, main.getRutUptime(dssh), numberOfIterations, numberOfErrors, main.getRutRamUsage(dssh))
                 return True
             else:
                 error.sendError("Read WAN IP", modbusWanIP, rutWanIP, main.getRutUptime(dssh), numberOfIterations, numberOfErrors, main.getRutRamUsage(dssh))
