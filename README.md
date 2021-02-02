@@ -1,6 +1,14 @@
 # Starting the test
-Before starting the test, factory reset is recommended and you must configure the `config.ini` file according to your router. You should see:
-```[modbusTCP]
+For the test to run, these packages must be installed first:
+```
+sudo pip3 install pyModbusTCP
+sudo pip3 install paramiko
+sudo pip3 install scp
+```
+
+Before starting the test, factory reset of the device is recommended and you must configure the `config.ini` file according to your router. You should see:
+```
+[modbusTCP]
 rutIP = 192.168.1.1
 rutModel = RUT955
 modbusPort = 502
