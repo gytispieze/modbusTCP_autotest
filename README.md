@@ -1,3 +1,7 @@
+# Description
+
+This Modbus TCP Slave autotest iterates through every modbus address available on the device, reading from it (writing too if available) and comparing to a value retrieved straight from the device through SSH. Every error, either if unable to retrieve modbus register or if the given values do not match, is recorded in a separate file. An output of processes ('ps') is saved as well every 5th iteration.
+
 # Starting the test
 For the test to run, these packages must be installed first:
 ```
